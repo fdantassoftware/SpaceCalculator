@@ -22,6 +22,7 @@ class ViewController: UIViewController {
     var leftNumber = ""
     var rightNumber = ""
     var currentOPeration: Operation = Operation.empty
+    var result = ""
     
     var btnSound: AVAudioPlayer!
     override func viewDidLoad() {
@@ -68,14 +69,46 @@ class ViewController: UIViewController {
     }
 
     @IBAction func onEqualPressed(sender: AnyObject) {
-        processOPeration(Operation.sub)
+        processOPeration(currentOPeration)
+        
+            
+        
+            
+        
+        
     }
 
 
 
     func processOPeration(op: Operation) {
-        if currentOPeration != Operation.empty{
-            // math
+        if currentOPeration != Operation.empty {
+            if currentNumber != "" {
+                rightNumber = currentNumber
+                currentNumber = ""
+                if currentOPeration == Operation.multi {
+                    result = "\(Double(leftNumber)! * Double(rightNumber)!)"
+                }else if currentOPeration == Operation.div {
+                    result = "\(Double(leftNumber)! / Double(rightNumber)!)"
+                    
+                }else if currentOPeration == Operation.add {
+                    result = "\(Double(leftNumber)! + Double(rightNumber)!)"
+                    
+                    
+                }else if currentOPeration == Operation.sub {
+                    result = "\(Double(leftNumber)! - Double(rightNumber)!)"
+                    
+                }
+                
+                
+                leftNumber = result
+                outputLabel.text = result
+            }
+            currentOPeration = op
+           
+                
+                
+                
+            
             
         }else{
             leftNumber = currentNumber
@@ -102,7 +135,9 @@ class ViewController: UIViewController {
     
     }
 
-
+    func resetLabel(){
+        outputLabel.text = ""
+    }
 
 
 
