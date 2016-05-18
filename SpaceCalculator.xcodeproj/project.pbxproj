@@ -14,6 +14,8 @@
 		9A7DAA331CEBF6BF003C5716 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A7DAA311CEBF6BF003C5716 /* LaunchScreen.storyboard */; };
 		9A7DAA3E1CEBF6BF003C5716 /* SpaceCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7DAA3D1CEBF6BF003C5716 /* SpaceCalculatorTests.swift */; };
 		9A7DAA491CEBF6BF003C5716 /* SpaceCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7DAA481CEBF6BF003C5716 /* SpaceCalculatorUITests.swift */; };
+		9A7DAA571CEC0D05003C5716 /* Starjedi.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9A7DAA561CEC0D05003C5716 /* Starjedi.ttf */; };
+		9A7DAA591CEC15DC003C5716 /* btn.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9A7DAA581CEC15DC003C5716 /* btn.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		9A7DAA441CEBF6BF003C5716 /* SpaceCalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpaceCalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A7DAA481CEBF6BF003C5716 /* SpaceCalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceCalculatorUITests.swift; sourceTree = "<group>"; };
 		9A7DAA4A1CEBF6BF003C5716 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A7DAA561CEC0D05003C5716 /* Starjedi.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Starjedi.ttf; sourceTree = "<group>"; };
+		9A7DAA581CEC15DC003C5716 /* btn.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = btn.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,8 @@
 		9A7DAA271CEBF6BF003C5716 /* SpaceCalculator */ = {
 			isa = PBXGroup;
 			children = (
+				9A7DAA561CEC0D05003C5716 /* Starjedi.ttf */,
+				9A7DAA581CEC15DC003C5716 /* btn.wav */,
 				9A7DAA281CEBF6BF003C5716 /* AppDelegate.swift */,
 				9A7DAA2A1CEBF6BF003C5716 /* ViewController.swift */,
 				9A7DAA2C1CEBF6BF003C5716 /* Main.storyboard */,
@@ -229,8 +235,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A7DAA591CEC15DC003C5716 /* btn.wav in Resources */,
 				9A7DAA331CEBF6BF003C5716 /* LaunchScreen.storyboard in Resources */,
 				9A7DAA301CEBF6BF003C5716 /* Assets.xcassets in Resources */,
+				9A7DAA571CEC0D05003C5716 /* Starjedi.ttf in Resources */,
 				9A7DAA2E1CEBF6BF003C5716 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -400,6 +408,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SpaceCalculator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.DantasSoftware.SpaceCalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -411,6 +420,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SpaceCalculator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.DantasSoftware.SpaceCalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
