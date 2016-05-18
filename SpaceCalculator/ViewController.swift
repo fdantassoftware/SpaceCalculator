@@ -26,7 +26,7 @@ class ViewController: UIViewController {
     
     var btnSound: AVAudioPlayer!
     override func viewDidLoad() {
-        outputLabel.text = ""
+       
         super.viewDidLoad()
         let path = NSBundle.mainBundle().pathForResource("btn", ofType: "wav")
         let soundURL = NSURL(fileURLWithPath: path!)
